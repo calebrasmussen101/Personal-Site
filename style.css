@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/backgtound.jpg");
+  background-size: 100%;
+  margin: auto;
+}
+.header {
+  background-color: burlywood;
+  border-style: ridge;
+  border-width: 12px;
+  border-radius: 30px;
+  border-color: blanchedalmond;
+  border-color: blanchedalmond;
+  box-shadow: #deb887 12px 12px 12px 12px;
+  grid-area: head;
+  margin-top: 20px;
+}
+
+.name {
+  display: flex;
+  font-style: bold;
+  font-size: 40px;
+  float: left;
+  margin: 15px;
+}
+nav {
+  float: right;
+  display: flex;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+nav a {
+  margin-top: 2px;
+  padding: 2px;
+  color: black;
+  background-image: linear-gradient(to bottom right, #cd853f, #8b4513);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+  font-size: 40px;
+  text-decoration: underline;
+  margin: 15px;
+}
+
+a:hover {
+  background-size: 100% 100%;
+}
+
+footer {
+  display: flex;
+
+  justify-content: center;
+  grid-area: foot;
+  background-color: burlywood;
+  border-style: ridge;
+
+  border-color: blanchedalmond;
+  border-color: blanchedalmond;
+  box-shadow: #deb887 12px 12px 12px 12px;
+  border-width: 12px;
+  margin-bottom: auto;
+  border-radius: 30px;
+}
+
+.foot_img {
+  max-height: 45px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.foot a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+h1 {
+  margin: 25px;
+  font-size: 40px;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+/* index page styling*/
+.grid {
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr;
+  grid-template-rows: 125px 0.5fr 125px;
+  grid-template-areas: "head head" " none main" "foot foot";
+  min-height: auto;
+  column-gap: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 200px;
+  background-color: burlywood;
+  border-style: ridge;
+  border-color: blanchedalmond;
+  box-shadow: #deb887 12px 12px 12px 12px;
+  grid-area: main;
+  font-size: 70px;
+  border-width: 12px;
+  border-radius: 50px;
+  border-radius: 30px;
+  padding: 12px;
+}
+
+.aboutme {
+  margin-top: 20px;
+  font-size: 40px;
+  margin: 12px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  grid-area: about;
+}
+.quote {
+  justify-content: center;
+  text-align: end;
+  font-family: "Dancing Script", cursive;
+}
+/* start off about me code*/
+.gridabout {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 125px 100px 0.5fr 0.5fr 0.5fr 130px;
+  grid-template-areas:
+    "head head head"
+    "when when when"
+    "camp camp camp"
+    "hockey hockey hockey"
+    "lighting lighting lighting"
+    "foot foot foot";
+  min-height: 100vh;
+}
+.camping {
+  grid-area: camp;
+  font-size: 40px;
+  background-color: burlywood;
+  border-style: ridge;
+  border-color: blanchedalmond;
+  box-shadow: #deb887 12px 12px 12px 12px;
+  margin: 40px;
+  border-width: 12px;
+  border-radius: 12px;
+  border-radius: 30px;
+  padding: 12px;
+}
+.hockey {
+  grid-area: hockey;
+
+  background-color: burlywood;
+  border-style: ridge;
+  border-color: blanchedalmond;
+  box-shadow: #deb887 12px 12px 12px 12px;
+  margin: 40px;
+  border-width: 12px;
+  border-radius: 30px;
+}
+.lighting {
+  grid-area: lighting;
+
+  background-color: burlywood;
+  border-style: ridge;
+  border-color: blanchedalmond;
+  box-shadow: #deb887 12px 12px 12px 12px;
+  margin: 40px;
+  border-width: 12px;
+  border-radius: 30px;
+}
+.when {
+  margin-top: 25px;
+  grid-area: when;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+}
+p {
+  font-size: 30px;
+}
+/* Portfolio page css */
+.gridport {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 125px 3fr 125px;
+  grid-template-areas:
+    "head head head"
+    "one two three "
+    "one two three"
+    "one two three"
+    "foot foot foot";
+  min-height: 100vh;
+}
+.projectone {
+  grid-area: one;
+  background-color: burlywood;
+  border-style: ridge;
+  border-color: blanchedalmond;
+  box-shadow: #deb887 12px 12px 12px 12px;
+  margin: 40px;
+  border-width: 12px;
+  border-radius: 30px;
+  padding: 12px;
+}
+.projectone p {
+  font-size: 35px;
+}
+
+.projecttwo {
+  grid-area: two;
+  background-color: burlywood;
+  border-style: ridge;
+  border-color: blanchedalmond;
+  box-shadow: #deb887 12px 12px 12px 12px;
+  margin: 40px;
+  border-width: 12px;
+  border-radius: 30px;
+  padding: 12px;
+}
+.projecttwo p {
+  font-size: 35px;
+}
+.projectthree {
+  grid-area: three;
+  background-color: burlywood;
+  border-style: ridge;
+  border-color: blanchedalmond;
+  box-shadow: #deb887 12px 12px 12px 12px;
+  margin: 40px;
+  border-width: 12px;
+  border-radius: 30px;
+  padding: 12px;
+}
+.projectthree p {
+  font-size: 35px;
+}
+.floatcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
